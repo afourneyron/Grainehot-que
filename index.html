@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grainehotèque</title>
+    <meta
+      name="description"
+      content="Catalogue et suivi de graines pour une petite collection personnelle de fruits, légumes et aromates."
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand">
+          <span class="brand-mark">🌱</span>
+          <div>
+            <strong>Grainehotèque</strong>
+            <small>ma petite collection de semences</small>
+          </div>
+        </div>
+        <nav class="nav-links" aria-label="Navigation principale">
+          <a href="#catalogue">Catalogue</a>
+          <a href="#journal">Journal</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-inner">
+          <div>
+            <p class="eyebrow">Collection personnelle</p>
+            <h1>Mes graines, mes souvenirs, mes semis.</h1>
+            <p class="hero-text">
+              Une boîte à graines organisée pour garder trace des variétés, des
+              origines et des essais de culture.
+            </p>
+            <div class="hero-actions">
+              <a href="#catalogue" class="button primary">Voir les graines</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <h2>En bref</h2>
+            <ul>
+              <li>13 graines dans la collection</li>
+              <li>Fruit, légume et aromates</li>
+              <li>Suivi simple en local</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats container" aria-label="Statistiques de la collection">
+        <article class="stat-card">
+          <span class="stat-number" id="statTotal">0</span>
+          <span class="stat-label">graines</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number" id="statLegumes">0</span>
+          <span class="stat-label">légumes</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number" id="statFruits">0</span>
+          <span class="stat-label">fruits</span>
+        </article>
+        <article class="stat-card">
+          <span class="stat-number" id="statAromates">0</span>
+          <span class="stat-label">aromates</span>
+        </article>
+      </section>
+
+      <section id="catalogue" class="container section-grid">
+        <aside class="filters-panel" aria-label="Filtres de recherche">
+          <h2>Catalogue</h2>
+          <label class="field">
+            <span>Recherche</span>
+            <input id="searchInput" type="text" placeholder="Nom, lieu, origine..." />
+          </label>
+
+          <label class="field">
+            <span>Catégorie</span>
+            <select id="categoryFilter">
+              <option value="all">Toutes</option>
+              <option value="legume">Légumes</option>
+              <option value="fruit">Fruits</option>
+              <option value="aromate">Aromates</option>
+            </select>
+          </label>
+
+          <label class="field">
+            <span>Statut</span>
+            <select id="statusFilter">
+              <option value="all">Tous</option>
+              <option value="à semer">À semer</option>
+              <option value="semé">Semé</option>
+              <option value="en cours">En cours</option>
+              <option value="récolté">Récolté</option>
+            </select>
+          </label>
+
+          <button class="button secondary" id="resetFilters">Réinitialiser</button>
+        </aside>
+
+        <div class="catalogue">
+          <div id="seedGrid" class="seed-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="journal" class="container journal-section">
+        <div class="section-header">
+          <h2>Mon journal</h2>
+          <p>Petite mémoire des semis et des observations.</p>
+        </div>
+        <div id="journalList" class="journal-list"></div>
+      </section>
+    </main>
+
+    <aside id="detailPanel" class="detail-panel hidden" aria-live="polite">
+      <button id="closeDetail" class="close-button" aria-label="Fermer la fiche">✕</button>
+      <div id="detailContent"></div>
+    </aside>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
