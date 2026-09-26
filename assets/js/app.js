@@ -12,6 +12,7 @@ const state = {
 
 const element = {
   seedGrid: document.getElementById('seedGrid'),
+  resultsSummary: document.getElementById('resultsSummary'),
   searchInput: document.getElementById('searchInput'),
   categoryFilter: document.getElementById('categoryFilter'),
   statusFilter: document.getElementById('statusFilter'),
@@ -38,9 +39,30 @@ function saveJournal(journal) {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(journal));
 }
 
-function getSeedStatus(seedId) {
-  const journal = loadJournal();
-  return journal[seedId]?.status || seedId ? null : null;
+function slugifyStatus(status) {
+  return (status || 'a-semer')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '') || 'a-semer';
+}
+
+function renderList(items, title) {
+  if (!Array.isArray(items) || !items.length) {
+    return '';
+  }
+
+  const listItems = items
+    .map((item) => `<li>${item}</li>`)
+    .join('');
+
+  return `
+    <div class="detail-section">
+      <h3>${title}</h3>
+      <ul class="info-list">${listItems}</ul>
+    </div>
+  `;
 }
 
 function renderStats() {
@@ -84,6 +106,7 @@ function getFilteredSeeds() {
 function renderSeedCard(seed) {
   const journal = loadJournal();
   const savedStatus = journal[seed.id]?.status || seed.status;
+  const statusClass = slugifyStatus(savedStatus);
 
   const card = document.createElement('article');
   card.className = 'seed-card';
@@ -104,7 +127,7 @@ function renderSeedCard(seed) {
     </div>
     <div class="seed-card-footer">
       <span>${seed.sowingPeriod}</span>
-      <span class="status-pill ${savedStatus}">${savedStatus}</span>
+      <span class="status-pill ${statusClass}">${savedStatus}</span>
     </div>
   `;
 
@@ -127,6 +150,12 @@ function renderSeedCard(seed) {
 function renderCatalog() {
   const filteredSeeds = getFilteredSeeds();
 
+  if (filteredSeeds.length) {
+    element.resultsSummary.textContent = `${filteredSeeds.length} graine${filteredSeeds.length > 1 ? 's' : ''} affichée${filteredSeeds.length > 1 ? 's' : ''}`;
+  } else {
+    element.resultsSummary.textContent = 'Aucune graine ne correspond aux filtres.';
+  }
+
   if (!filteredSeeds.length) {
     element.seedGrid.innerHTML = `
       <div class="empty-state">
@@ -137,9 +166,12 @@ function renderCatalog() {
   }
 
   element.seedGrid.innerHTML = '';
-  filteredSeeds.forEach((seed) => {
-    element.seedGrid.appendChild(renderSeedCard(seed));
-  });
+  filteredSeeds
+    .slice()
+    .sort((a, b) => a.name.localeCompare(b.name))
+    .forEach((seed) => {
+      element.seedGrid.appendChild(renderSeedCard(seed));
+    });
 }
 
 function openDetail(seedId) {
@@ -149,6 +181,7 @@ function openDetail(seedId) {
   const journal = loadJournal();
   const savedStatus = journal[seed.id]?.status || seed.status;
   const savedNote = journal[seed.id]?.note || '';
+  const statusClass = slugifyStatus(savedStatus);
 
   element.detailPanel.classList.remove('hidden');
   element.detailContent.innerHTML = `
@@ -184,7 +217,7 @@ function openDetail(seedId) {
       </div>
       <div class="detail-card">
         <span>Statut</span>
-        <strong>${savedStatus}</strong>
+        <strong class="status-tag ${statusClass}">${savedStatus}</strong>
       </div>
     </div>
 
@@ -197,6 +230,19 @@ function openDetail(seedId) {
       <h3>Notes</h3>
       <p>${seed.notes}</p>
     </div>
+
+    ${renderList(seed.beginnerTips, 'Conseils de débutant')}
+    ${renderList(seed.permacultureTips, 'Astuces permaculture')}
+    ${renderList(seed.careTips, 'À surveiller')}
+    ${renderList(seed.companionPlants, 'Compagnons utiles')}
+    ${renderList(seed.avoidNear, 'À éviter à proximité')}
+
+    ${seed.sowingTips ? `
+      <div class="detail-section">
+        <h3>Semis et méthode</h3>
+        <p>${seed.sowingTips}</p>
+      </div>
+    ` : ''}
 
     <div class="detail-section">
       <h3>Mon suivi</h3>
@@ -271,16 +317,21 @@ function renderJournal() {
 
   element.journalList.innerHTML = entries
     .slice(0, 8)
-    .map(
-      (entry) => `
+    .map((entry) => {
+      const date = entry.updatedAt ? new Date(entry.updatedAt).toLocaleDateString('fr-FR') : '—';
+      const statusClass = slugifyStatus(entry.status || 'à semer');
+      return `
         <article class="journal-item">
-          <h3>${entry.seedName}</h3>
+          <div class="journal-topline">
+            <h3>${entry.seedName}</h3>
+            <span class="status-pill ${statusClass}">${entry.status || 'à semer'}</span>
+          </div>
           <p><strong>Lieu :</strong> ${entry.origin || '—'}</p>
-          <p><strong>Statut :</strong> ${entry.status || '—'}</p>
+          <p><strong>Le :</strong> ${date}</p>
           <p>${entry.note || 'Aucune observation enregistrée.'}</p>
         </article>
-      `
-    )
+      `;
+    })
     .join('');
 }
 

@@ -11,9 +11,24 @@
     "soilType": "sol bien drainé, riche",
     "difficulty": "facile",
     "description": "Graine issue d’une figue dégustée et récoltée dans la région du Cheylard.",
-    "notes": "À tester en pot ou en serre si le climat est doux.",
+    "notes": "Très bonne variété à tester si le climat est assez doux. La figue aime la chaleur et un sol profond.",
     "status": "à semer",
-    "personalNote": "À suivre pour voir si la variété se porte bien dans le climat local."
+    "personalNote": "À suivre pour voir si la variété se porte bien dans le climat local.",
+    "beginnerTips": [
+      "Placez la graine dans un récipient avec un sol léger et humide, sans compaction.",
+      "Laissez le sol rester chaud pour favoriser la levée et évitez les grosses variations de température."
+    ],
+    "permacultureTips": [
+      "Privilégiez un emplacement au chaud, proche d’un mur ou d’un coin abrité.",
+      "Ajoutez du compost pour améliorer le sol, sans l’enrichir de façon excessive."
+    ],
+    "careTips": [
+      "Les jeunes plants apprécient un sol stable et bien drainé.",
+      "Gardez le substrat humide sans l’excéder pour éviter les maladies racinaires."
+    ],
+    "companionPlants": ["courgettes", "tomates", "herbes aromatiques"],
+    "avoidNear": ["concombres en forte concurrence", "plantes très gourmandes"],
+    "sowingTips": "Semer dans un récipient ou un endroit chaud, puis repiquer une fois la plante solidement installée."
   },
   {
     "id": "fraise-2026-montpellier",
@@ -27,9 +42,24 @@
     "soilType": "sol léger et fertile",
     "difficulty": "moyen",
     "description": "Variété issue d’une récolte personnelle à Montpellier.",
-    "notes": "Souvent appréciée pour son parfum et ses fruits sucrés.",
+    "notes": "Le parfum et la saveur sont souvent très bons, mais les fraises demandent de la régularité dans l’arrosage.",
     "status": "à semer",
-    "personalNote": "À tester en bac ou en pot pour le balcon."
+    "personalNote": "À tester en bac ou en pot pour le balcon.",
+    "beginnerTips": [
+      "Utilisez un sol léger et enrichi en matière organique pour favoriser les racines.",
+      "Un accès au soleil est important, sans laisser le sol se dessécher complètement."
+    ],
+    "permacultureTips": [
+      "Mulch léger autour des plants pour conserver l’humidité et limiter les adventices.",
+      "En associant des couvre-sols, on réduit le besoin en arrosage et on protège le sol."
+    ],
+    "careTips": [
+      "L’arrosage régulier est plus important que le volume en une seule fois.",
+      "Pensez au paillage pour garder une terre vivante et bien structurée."
+    ],
+    "companionPlants": ["ail", "oignon", "basilic"],
+    "avoidNear": ["pommes de terre", "chou", "carottes très envahissantes"],
+    "sowingTips": "Semer dans un sol meuble et humide, puis garder de l’ombre légère au tout début si le sol est très chaud."
   },
   {
     "id": "fraise-2026-ardeche",
@@ -43,9 +73,24 @@
     "soilType": "sol léger et bien drainé",
     "difficulty": "moyen",
     "description": "Graine issue d’une fraise récoltée en Ardèche.",
-    "notes": "Très bonne candidate pour un petit jardin ou une jardinière.",
+    "notes": "Très bonne candidate pour un petit jardin ou une jardinière. Les fraises aiment les sols aérés et humides sans rester détrempés.",
     "status": "à semer",
-    "personalNote": "À comparer avec la fraise de Montpellier."
+    "personalNote": "À comparer avec la fraise de Montpellier.",
+    "beginnerTips": [
+      "Un sol bien drainé est essentiel pour éviter les pourritures.",
+      "Le paillage aide à conserver la fraîcheur du sol et limite les mauvaises herbes."
+    ],
+    "permacultureTips": [
+      "Utilisez des plantes couvre-sol autour pour stabiliser l’humidité et nourrir la terre.",
+      "Mieux vaut une petite plantation dense bien entretenue qu’une plantation trop espacée et faible."
+    ],
+    "careTips": [
+      "Dans les pots, surveillez les racines qui peuvent se compacter rapidement.",
+      "Un arrosage doux et régulier vaut mieux qu’un arrosage brutal."
+    ],
+    "companionPlants": ["basilic", "ail", "petits aromates"],
+    "avoidNear": ["plantes très lourdes en eau", "autres fruits qui se disputent l’espace"],
+    "sowingTips": "Dans un bac ou un petit jardin, garder le sol meuble et bien enrichi avant le semis."
   },
   {
     "id": "tomate-rose-de-bernes-2026-ardeche",
@@ -59,9 +104,24 @@
     "soilType": "sol riche, chaud et bien drainé",
     "difficulty": "facile",
     "description": "Tomate ancienne ou variété locale à garder dans la collection.",
-    "notes": "À semer en intérieur puis repiquer en extérieur après les risques de gel.",
+    "notes": "Les tomates aiment la chaleur et une bonne base organique. Il faut souvent les repiquer après les risques de gel.",
     "status": "à semer",
-    "personalNote": "Variante intéressante pour un jardin en plein soleil."
+    "personalNote": "Variante intéressante pour un jardin en plein soleil.",
+    "beginnerTips": [
+      "Commencez en intérieur puis repiquez à l’extérieur seulement quand le sol est bien chaud.",
+      "Un support ou une tuteur est utile pour stabiliser les plants."
+    ],
+    "permacultureTips": [
+      "Associez-les à des plantes compagnes qui apportent de la couverture du sol et protègent la terre.",
+      "L’ombre légère et les paillis aident à garder l’humidité sans l’excès d’eau."
+    ],
+    "careTips": [
+      "Ne laissez pas le sol se compacter autour des racines.",
+      "L’ajout de compost au moment du repiquage aide à la croissance."
+    ],
+    "companionPlants": ["basilic", "poivron", "marigold"],
+    "avoidNear": ["fenouil", "maïs trop agressif"],
+    "sowingTips": "Semer tôt en intérieur puis repiquer lorsqu’il fait nettement plus doux et que le sol est chaud."
   },
   {
     "id": "tomate-coeur-de-boeuf-2026-lyon",
@@ -75,9 +135,24 @@
     "soilType": "sol riche, profond et bien drainé",
     "difficulty": "facile",
     "description": "Tomate de type cœur de bœuf, issue d’une récolte de Lyon.",
-    "notes": "Très bonne pour les salades et les préparations.",
+    "notes": "Les gros fruits demandent un sol riche et un bon soutien. Elles valorisent les sols profonds et frais, sans rester trop humides.",
     "status": "à semer",
-    "personalNote": "À suivre pour les fruits charnus."
+    "personalNote": "À suivre pour les fruits charnus.",
+    "beginnerTips": [
+      "Les plants apprécient les tuteurs dès le départ pour éviter qu’ils cassent.",
+      "Une ombre légère l’après-midi peut aider dans les climats très chauds."
+    ],
+    "permacultureTips": [
+      "Ajoutez du paillis autour des pieds pour garder une humidité stable.",
+      "Privilégiez une vraie rotation de culture et évitez de planter les tomates au même endroit chaque année."
+    ],
+    "careTips": [
+      "Évitez les arrosages excessifs sur les feuilles afin de limiter les maladies.",
+      "Le goût est souvent meilleur quand la plante est bien exposée et nourrie."
+    ],
+    "companionPlants": ["basilic", "ail", "petits aromates"],
+    "avoidNear": ["fenouil", "piments trop proches si l’espace manque"],
+    "sowingTips": "Commencez en intérieur, puis repiquez avec un sol bien chaud et des tuteurs solides."
   },
   {
     "id": "tomate-cerise-2026-lyon",
@@ -91,9 +166,24 @@
     "soilType": "sol riche, chaud et bien drainé",
     "difficulty": "facile",
     "description": "Tomate cerise issue d’une récolte locale à Lyon.",
-    "notes": "Très bonne pour les bacs, jardinières et petits espaces.",
+    "notes": "Très facile à gérer dans un petit jardin ou sur un balcon, surtout si le soleil est généreux.",
     "status": "à semer",
-    "personalNote": "Excellente pour un semis sur balcon ou terrasse."
+    "personalNote": "Excellente pour un semis sur balcon ou terrasse.",
+    "beginnerTips": [
+      "Les tomates cerises se plaisent en pot si le récipient est suffisamment profond.",
+      "Leur croissance est rapide, donc tutez-les dès qu’elles prennent de la hauteur."
+    ],
+    "permacultureTips": [
+      "Le paillis aide à garder la terre stable sans trop d’arrosage.",
+      "Un petit mélange de compost et de terreau permet de garder le système racinaire actif."
+    ],
+    "careTips": [
+      "Surveillez les premiers stades pour éviter les nécroses et les coups de chaud.",
+      "Arrosez à la base plutôt qu’au feuillage."
+    ],
+    "companionPlants": ["basilic", "menthe", "ail"],
+    "avoidNear": ["fenouil", "plantes très ombragées"],
+    "sowingTips": "Semer en pot ou en mini jardin, puis tutez au besoin dès les premiers fruits."
   },
   {
     "id": "tomate-mornant-2026-ardeche",
@@ -107,9 +197,24 @@
     "soilType": "sol profond et bien enrichi",
     "difficulty": "facile",
     "description": "Tomate de Mornant, issue d’une récolte locale de l’Ardèche.",
-    "notes": "À garder pour les variétés de taille moyenne et les goûts traditionnels.",
+    "notes": "Cette variété mérite d’être testée si tu cherches des saveurs plus traditionnelles et une culture robuste.",
     "status": "à semer",
-    "personalNote": "À tester pour sa saveur locale."
+    "personalNote": "À tester pour sa saveur locale.",
+    "beginnerTips": [
+      "Le sol doit être profond pour soutenir le développement racinaire.",
+      "Un bon apport de compost avant la plantation est très utile."
+    ],
+    "permacultureTips": [
+      "Laissez un peu de couverture végétale autour pour conserver l’humidité du sol.",
+      "Privilégiez des rotations simples et un sol vivant, pas juste riche en nutriments."
+    ],
+    "careTips": [
+      "L’arrosage régulier est plus essentiel que le volume unique.",
+      "Le repiquage doit se faire quand le climat est stable."
+    ],
+    "companionPlants": ["basilic", "courgette", "petits aromates"],
+    "avoidNear": ["fenouil", "plantes qui consomment beaucoup d’eau"],
+    "sowingTips": "Semer en pots au chaud puis repiquer dans un sol enrichi et bien drainé."
   },
   {
     "id": "aubergine-variete-ancienne-2026-lyon",
@@ -123,9 +228,24 @@
     "soilType": "sol chaud, riche et bien drainé",
     "difficulty": "moyen",
     "description": "Aubergine ancienne, issue d’une récolte locale.",
-    "notes": "Demande de la chaleur et du temps pour bien se développer.",
+    "notes": "L’aubergine aime la chaleur et a besoin d’un sol généreux. Elle est plus exigeante que la tomate sur le climat.",
     "status": "à semer",
-    "personalNote": "À tester en pot ou dans un coin très ensoleillé."
+    "personalNote": "À tester en pot ou dans un coin très ensoleillé.",
+    "beginnerTips": [
+      "L’aubergine demande de la chaleur, donc un emplacement très ensoleillé est important.",
+      "Le repiquage tardif peut la ralentir si le sol reste frais."
+    ],
+    "permacultureTips": [
+      "Un paillis léger aide à garder la terre chaude et stable.",
+      "Des associations simples dans un jardin chaud peuvent renforcer la santé du sol."
+    ],
+    "careTips": [
+      "Évitez les terres trop compactes qui empêchent les racines de bien se développer.",
+      "Le binage superficiel vaut mieux qu’un retournement profond du sol."
+    ],
+    "companionPlants": ["tomates", "poivrons", "basilic"],
+    "avoidNear": ["fenouil", "plantes trop ombragées"],
+    "sowingTips": "Semer en intérieur avant de repiquer dans un emplacement bien chaud et lumineux."
   },
   {
     "id": "piment-cayenne",
@@ -139,9 +259,24 @@
     "soilType": "sol chaud et bien drainé",
     "difficulty": "moyen",
     "description": "Piment de Cayenne avec provenance non précisée dans la boîte.",
-    "notes": "Variété très chaude, à cultiver en pot ou endroit chaud.",
+    "notes": "Le piment aime le chaud et la lumière. C’est une variété qui peut vite devenir très productive si le sol reste bien chaud.",
     "status": "à semer",
-    "personalNote": "À surveiller car l’origine n’est pas totalement tracée."
+    "personalNote": "À surveiller car l’origine n’est pas totalement tracée.",
+    "beginnerTips": [
+      "Le piment demande souvent plus de chaleur que la tomate.",
+      "Un pot assez profond et bien exposé est souvent une bonne solution."
+    ],
+    "permacultureTips": [
+      "Laissez un peu de couverture végétale au pied pour garder l’humidité sans compacter.",
+      "Un sol vivant et aéré aide les racines à bien se développer."
+    ],
+    "careTips": [
+      "Le piment n’aime pas les sols longtemps détrempés.",
+      "Pensez à arroser à la base avec modération, surtout en plein soleil."
+    ],
+    "companionPlants": ["basilic", "poivron", "tomates"],
+    "avoidNear": ["fenouil", "plantes très gourmandes en eau"],
+    "sowingTips": "Semer en intérieur dans un sol chaud puis repiquer dans un endroit très ensoleillé."
   },
   {
     "id": "poivron-lyon-2026",
@@ -155,9 +290,24 @@
     "soilType": "sol riche, bien aéré",
     "difficulty": "moyen",
     "description": "Poivron issu d’une récolte locale de Lyon.",
-    "notes": "Ses fruits peuvent être de taille moyenne selon la variété.",
+    "notes": "Les poivrons aiment la chaleur, un sol fertile et une bonne exposition. Ils sont souvent plus lents au démarrage mais très satisfaisants.",
     "status": "à semer",
-    "personalNote": "Très bon candidat pour un jardin bien exposé."
+    "personalNote": "Très bon candidat pour un jardin bien exposé.",
+    "beginnerTips": [
+      "Le poivron est plus exigeant que le piment sur le chaud et le sol stable.",
+      "Les jeunes plants sont mieux dans une terre douce et bien meuble."
+    ],
+    "permacultureTips": [
+      "Un sol vivant et riche en matière organique favorise une bonne croissance.",
+      "Le paillage aide à garder la fraîcheur et évite les variations trop brutales."
+    ],
+    "careTips": [
+      "L’arrosage doux et peu fréquent est préférable au temps d’une saturation prolongée.",
+      "Les poivrons apprécient le soutien ou la stabilité du sol autour de leur racine."
+    ],
+    "companionPlants": ["tomates", "basilic", "ail"],
+    "avoidNear": ["fenouil", "plantes ayant un fort besoin en azote"],
+    "sowingTips": "Semer d’abord en intérieur, puis repiquer seulement lorsque les nuits sont agréables."
   },
   {
     "id": "mini-poivron-lyon-2026",
@@ -171,9 +321,24 @@
     "soilType": "sol riche et bien drainé",
     "difficulty": "moyen",
     "description": "Poivron mini, récolté à Lyon.",
-    "notes": "Idéal pour les petits espaces et les bacs.",
+    "notes": "Idéal pour les petits espaces, les jardinières et les bacs. Il se cultive bien si le sol est chaud et fertile.",
     "status": "à semer",
-    "personalNote": "À essayer en pot pour les petits espaces."
+    "personalNote": "À essayer en pot pour les petits espaces.",
+    "beginnerTips": [
+      "Un pot assez profond est souvent suffisant pour un bon développement.",
+      "Un emplacement bien exposé permet d’obtenir des fruits plus réguliers."
+    ],
+    "permacultureTips": [
+      "Le paillis garde l’humidité et réduit le besoin d’arrosage répétitif.",
+      "Privilégiez un sol vivant avec de la matière organique, pas seulement un substrat très nutritif."
+    ],
+    "careTips": [
+      "Surveillez les racines, qui peuvent tourner dans le pot si l’espace manque.",
+      "Le binage léger est souvent mieux que les remaniements profonds."
+    ],
+    "companionPlants": ["basilic", "ail", "tomates"],
+    "avoidNear": ["plantes très ombrageantes", "fenouil"],
+    "sowingTips": "Semer en pot avec un sol chaud et repiquer dès que la plante est assez solide."
   },
   {
     "id": "fraise-du-balcon-2026",
@@ -187,9 +352,24 @@
     "soilType": "sol léger, bien drainé",
     "difficulty": "facile",
     "description": "Graine issue d’une fraise du balcon, provenant probablement d’un plant acheté en magasin.",
-    "notes": "Très utile pour un essai en jardinière ou au balcon.",
+    "notes": "Cette graine a un intérêt de mémoire et d’expérience. Une fraise en pot peut être un excellent test pour un balcon bien exposé.",
     "status": "à semer",
-    "personalNote": "Cette graine provient d’un plant de fraise de magasin, donc il faut garder cette origine en mémoire."
+    "personalNote": "Cette graine provient d’un plant de fraise de magasin, donc il faut garder cette origine en mémoire.",
+    "beginnerTips": [
+      "Les fraises en pot réussissent souvent bien si elles ont du soleil et un bon drainage.",
+      "Le goût est parfois meilleur si l’on garde les pots légers et le sol aérien."
+    ],
+    "permacultureTips": [
+      "Le paillage garde l’humidité et protège la surface de la terre.",
+      "L’idée est de travailler avec un sol vivant, sans l’épuiser en remaniements excessifs."
+    ],
+    "careTips": [
+      "Le pot doit être suffisamment profond pour laisser les racines se développer.",
+      "Un arrosage régulier et modéré vaut mieux qu’un arrosage trop long." 
+    ],
+    "companionPlants": ["basilic", "ail", "petites herbes"],
+    "avoidNear": ["mauvaises herbes agressives", "plantes trop volumineuses"],
+    "sowingTips": "Mettre en pot dans une terre légère, bien drainée, puis garder un bon équilibre d’eau et de soleil."
   },
   {
     "id": "raisin-2026-lyon",
@@ -203,8 +383,23 @@
     "soilType": "sol léger, bien drainé",
     "difficulty": "moyen",
     "description": "Pépins de raisin récoltés à Lyon.",
-    "notes": "Le semis peut être long et parfois peu fiable en jardinage domestique.",
+    "notes": "Le raisin est une belle expérience de culture, surtout pour comprendre les étapes longues et les besoins en chaleur.",
     "status": "à semer",
-    "personalNote": "À tester comme expérience plus qu’outil de production."
+    "personalNote": "À tester comme expérience plus qu’outil de production.",
+    "beginnerTips": [
+      "Le raisin demande souvent du temps et un climat favorable pour bien se développer.",
+      "Un sol plutôt léger, chaud et bien drainé est préférable." 
+    ],
+    "permacultureTips": [
+      "Le sol doit rester vivant, avec une matière organique légère et une bonne structure.",
+      "La prise en compte de l’exposition et de l’espace est essentielle pour garder un système sain."
+    ],
+    "careTips": [
+      "Le semis peut être lent, donc il faut “garder le cap” sans attendre une germination rapide.",
+      "L’essentiel est de fournir un sol ouvert et un emplacement très ensoleillé."
+    ],
+    "companionPlants": ["herbes aromatiques", "légumes à faible concurrence"],
+    "avoidNear": ["plantes très gourmandes", "arbres qui ombragent trop"],
+    "sowingTips": "Semer dans un sol meuble, chaud, avec un bon ensoleillement et beaucoup de patience."
   }
 ]
