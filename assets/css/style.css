@@ -46,7 +46,8 @@ a {
 
 button,
 input,
-select {
+select,
+textarea {
   font: inherit;
 }
 
@@ -597,6 +598,307 @@ select {
   color: var(--muted);
 }
 
+/* ---------- Photos ---------- */
+
+.seed-card-photo,
+.journal-photo {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  background: var(--panel-strong);
+}
+
+.detail-photo {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 0.8rem;
+  background: var(--panel-strong);
+}
+
+.detail-section p a,
+.gardener-help a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+/* ---------- Boutons ---------- */
+
+.button.small {
+  padding: 0.55rem 1rem;
+  font-size: 0.88rem;
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.detail-header .button.small {
+  margin-bottom: 0.4rem;
+}
+
+.nav-button {
+  border: 1px solid rgba(45, 106, 79, 0.2);
+  background: var(--primary-soft);
+  color: var(--primary-dark);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-button:hover {
+  border-color: var(--primary);
+}
+
+.link-button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin-top: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.link-button.danger {
+  color: var(--danger);
+}
+
+/* ---------- Suivi ---------- */
+
+.timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1rem;
+  border-left: 2px solid var(--primary-soft);
+  display: grid;
+  gap: 0.8rem;
+}
+
+.timeline-item {
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(45, 106, 79, 0.12);
+  border-radius: 14px;
+  padding: 0.8rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1rem - 7px);
+  top: 1.05rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid var(--panel);
+}
+
+.timeline-topline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.timeline-item p {
+  margin-top: 0.4rem;
+}
+
+.timeline-author {
+  font-size: 0.82rem;
+  font-style: italic;
+}
+
+.timeline-photo {
+  display: block;
+  width: 100%;
+  max-height: 240px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 0.6rem;
+}
+
+.timeline-empty {
+  font-style: italic;
+}
+
+.journal-form h4 {
+  margin: 0;
+  color: var(--primary-dark);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.journal-form input[type="date"],
+.journal-form input[type="file"],
+.gardener-form input {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  background: white;
+  color: var(--text);
+  min-width: 0;
+}
+
+.gardener-hint {
+  margin-top: 1rem;
+  padding: 0.9rem;
+  border: 1px dashed var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.gardener-hint p {
+  margin-bottom: 0.6rem;
+}
+
+.journal-item {
+  cursor: pointer;
+  display: grid;
+  align-content: start;
+  gap: 0.2rem;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.journal-item:hover {
+  transform: translateY(-2px);
+  border-color: rgba(45, 106, 79, 0.35);
+}
+
+.journal-item .journal-photo {
+  margin-bottom: 0.5rem;
+}
+
+.journal-note {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ---------- Mode jardinier ---------- */
+
+.gardener-dialog {
+  width: min(480px, calc(100% - 2rem));
+  border: 1px solid rgba(45, 106, 79, 0.15);
+  border-radius: 22px;
+  padding: 1.4rem;
+  background: var(--panel);
+  color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+.gardener-dialog::backdrop {
+  background: rgba(31, 43, 29, 0.35);
+}
+
+.gardener-form {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.gardener-form h2 {
+  margin: 0;
+}
+
+.gardener-form p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.gardener-form label {
+  display: grid;
+  gap: 0.45rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.gardener-help {
+  background: var(--panel-strong);
+  border-radius: 12px;
+  padding: 0.7rem 0.9rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.gardener-help summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.gardener-help ol {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.form-hint {
+  font-size: 0.85rem;
+}
+
+.gardener-form .form-error {
+  color: var(--danger);
+  font-weight: 600;
+}
+
+.legacy-import {
+  display: grid;
+  gap: 0.6rem;
+  padding: 0.9rem;
+  border-radius: 14px;
+  background: var(--accent-soft);
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+/* ---------- Notifications ---------- */
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  z-index: 100;
+  width: max-content;
+  max-width: calc(100% - 2rem);
+  padding: 0.8rem 1.2rem;
+  border-radius: 14px;
+  background: var(--primary-dark);
+  color: white;
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+.toast.error {
+  background: var(--danger);
+}
+
+.toast[hidden] {
+  display: none;
+}
+
 @media (max-width: 900px) {
   .hero-inner,
   .section-grid {
@@ -632,7 +934,8 @@ select {
     font-size: 0.9rem;
   }
 
-  .detail-grid {
+  .detail-grid,
+  .form-row {
     grid-template-columns: 1fr;
   }
 

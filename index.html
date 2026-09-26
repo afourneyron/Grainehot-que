@@ -23,6 +23,7 @@
         <nav class="nav-links" aria-label="Navigation principale">
           <a href="#catalogue">Catalogue</a>
           <a href="#journal">Journal</a>
+          <button type="button" id="gardenerButton" class="nav-button">🔑 Mode jardinier</button>
         </nav>
       </div>
     </header>
@@ -114,7 +115,7 @@
       <section id="journal" class="container journal-section">
         <div class="section-header">
           <h2>Mon journal</h2>
-          <p>Petite mémoire des semis et des observations.</p>
+          <p>Petite mémoire des semis et des observations, partagée avec tous les visiteurs.</p>
         </div>
         <div id="journalList" class="journal-list"></div>
       </section>
@@ -124,6 +125,12 @@
       <button id="closeDetail" class="close-button" aria-label="Fermer la fiche">✕</button>
       <div id="detailContent"></div>
     </aside>
+
+    <dialog id="gardenerDialog" class="gardener-dialog" aria-label="Mode jardinier">
+      <div id="gardenerContent"></div>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
     <script src="./assets/js/app.js"></script>
   </body>
